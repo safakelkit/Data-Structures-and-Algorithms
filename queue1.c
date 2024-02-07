@@ -66,7 +66,7 @@ int main(){
 
     bool check_dequeue = false;
     bool *ptr_bool = &check_dequeue;
-    if(isempty(queue) == false) printf("Bos Degil\n");
+    if(isempty(queue) == false) printf("Not Empty\n");
 
     print_queue(queue);
 
