@@ -86,13 +86,8 @@ struct node *merge_ll(struct node *head, struct node *head2){
         if(temp != NULL) temp = temp->next;
         if(temp2 != NULL) temp2 = temp2->next;
 
-        if(temp != NULL && temp2 == NULL){
-            data = temp->data;
-            add_merge(merge, temp->data);
-        }
-        else if (temp2 != NULL && temp == NULL){
-            data = temp2->data;
-            add_merge(merge, temp2->data);
+        if(temp != NULL && temp2 == NULL) add_merge(merge, temp->data);
+        else if (temp2 != NULL && temp == NULL) add_merge(merge, temp2->data);
         }
     }
 
